@@ -3,12 +3,15 @@ function frameLoad() {
 
     const contents = document.getElementById("content");
     searchbar.value = contents.src;
+    
+    //searchbar.value = contents.contentWindow.location.href;
+    
 
     $.ajax({
         type: 'get',
         url: contents.src,
         success: function () {
-            console.log("The webpage exists.")
+            console.log("The webpage exists.");
         },
         error: function () {
             console.log("The webpage does not exist!");
@@ -37,7 +40,5 @@ async function handleEnter(event) {
         } else {
             await setFrame("http://" + searchbar.value);
         }
-
-        //  search button + back buttons + reload + suggestions
     }
 }
