@@ -1,0 +1,33 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.frame {
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bar {
+  position: absolute;
+  top: 0px;
+  height: 7%;
+  background-color: rgb(109, 70, 70);
+  width: 100%;
+  display: flex;
+  margin: 0;
+  color: white;
+}
+
+.search-bar {
+  width: 80%;
+  border: 2px solid rgb(97, 97, 97);
+  border-radius: 4px;
+  margin-top: 0.8%;
+  height: 40%;
+}
